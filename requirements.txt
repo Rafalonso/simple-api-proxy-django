@@ -1,4 +1,5 @@
 django
-django-rest-framework
+djangorestframework
 redis
+django-redis-cache
 pycurl
