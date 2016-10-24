@@ -49,5 +49,10 @@ In case the id is not found it will reproduce the following message:
     "message": "Event requested not found"
 }`
 
+## Logging
+
+Everything is logged in a file with the name set in settings.py
+
+
 ## Running tests
 In the project folder run `python manage.py test`
