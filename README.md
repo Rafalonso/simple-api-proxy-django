@@ -21,9 +21,12 @@ Scalable simple api proxy using django-rest-framework. This tool aggregates and 
 
 This api comes with a sample request with the following url structure:
   `/events-with-subscriptions/$event_id/`
+  
 To call this API you also need an admin user. Here is an example curl request.
   ` curl -u username:password http://127.0.0.1:8000/events/27b9fa174d3e8c317f585d3c86cb9d52_14768033385908/`
+  
 It will reproduce this output
+
 `{
     "event_id": "27b9fa174d3e8c317f585d3c86cb9d52_14768033385908",
     "names": [
@@ -40,6 +43,7 @@ It will reproduce this output
 }`
 
 In case the id is not found it will reproduce the following message:
+
 `{
     "status code": 404,
     "message": "Event requested not found"
